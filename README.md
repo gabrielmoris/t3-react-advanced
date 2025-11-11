@@ -1,4 +1,26 @@
+# T3 Gallery PRoject
+
+## TODO
+
+- [ ] Make it deploy (vercel)
+- [ ] Scaffold basic ui with mock data
+- [ ] Set up a database (vercel postgres)
+- [ ] Attach database to UI
+- [ ] Add authentication (with clerk)
+- [ ] Add image upload
+- [ ] Error management (with Sentry)
+- [ ] Routing/image page (parallel route)
+- [ ] Delete button (with server actions)
+- [ ] Analytics (posthog)
+- [ ] Ratelimiting (upstash)
+
+# Thhings I learned
+
+`git add -p` to see the changes and select which ones to add
+
 # Create T3 App
+
+`pnpm create t3-app@latest`
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
