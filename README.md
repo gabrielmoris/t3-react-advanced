@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] Make it deploy (vercel)
+- [x] Make it deploy (vercel)
 - [ ] Scaffold basic ui with mock data
 - [ ] Set up a database (vercel postgres)
 - [ ] Attach database to UI
@@ -16,7 +16,7 @@
 
 # Thhings I learned
 
-`git add -p` to see the changes and select which ones to add
+- Use `git add -p` to see the changes and select which ones to add
 
 # Create T3 App
 
