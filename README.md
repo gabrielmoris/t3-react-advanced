@@ -18,6 +18,7 @@
 # Thhings I learned
 
 - Use `git add -p` to see the changes and select which ones to add
+- By default Next caches the website , to force updating the component I use `export const dynamic = "force-dynamic";`
 
 # Create T3 App
 
