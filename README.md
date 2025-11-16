@@ -8,7 +8,7 @@
 - [x] Set up a database (vercel postgres)
 - [x] Attach database to UI
 - [x] Add authentication (with clerk)
-- [ ] Add image upload
+- [x] Add image upload
 - [ ] "taint" (server-only)
 - [ ] Use Next/Image Component
 - [ ] Error management (with Sentry)
@@ -17,10 +17,18 @@
 - [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
 
-# Thhings I learned
+# Things I learned
 
 - Use `git add -p` to see the changes and select which ones to add
 - By default Next caches the website , to force updating the component I use `export const dynamic = "force-dynamic";`
+- React Taint is an experimental security feature in React focused on preventing sensitive data—such as secrets, user objects, or tokens—from being unintentionally exposed to the client side when using Server Components (RSCs). It works by "tainting" data or objects, which means marking them as forbidden to cross the server-to-client boundary
+- `import 'server-only'` marks your module as only usable on the server and prevents it from being used on the client.
+
+# Services Used
+
+- https://docs.uploadthing.com
+- https://clerk.com
+- https://vercel.com
 
 # Create T3 App
 
