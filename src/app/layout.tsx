@@ -5,6 +5,7 @@ import { Geist } from "next/font/google";
 
 import { ClerkProvider } from "@clerk/nextjs";
 import { TopNav } from "./_components/topnav";
+import "@uploadthing/react/styles.css";
 
 export const metadata: Metadata = {
   title: "T3 Gallery",
