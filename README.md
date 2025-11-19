@@ -23,6 +23,7 @@
 - By default Next caches the website , to force updating the component I use `export const dynamic = "force-dynamic";`
 - React Taint is an experimental security feature in React focused on preventing sensitive data—such as secrets, user objects, or tokens—from being unintentionally exposed to the client side when using Server Components (RSCs). It works by "tainting" data or objects, which means marking them as forbidden to cross the server-to-client boundary
 - `import 'server-only'` marks your module as only usable on the server and prevents it from being used on the client.
+- @modal creation is a feature from Next.js. Check implementation in `layout.tsx`. https://nextjs.org/docs/app/api-reference/file-conventions/parallel-routes
 
 # Services Used
 
