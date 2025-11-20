@@ -7,6 +7,6 @@ export default async function PhotoModal({
 }) {
   const { id: photoId } = await params;
   const idAsNumber = Number(photoId);
-  const image = await getImage(Number(photoId));
-  return <div>Photo {photoId}</div>;
+  const image = await getImage(idAsNumber);
+  return <img src={image.url} alt={image.name} className="w-96" />;
 }

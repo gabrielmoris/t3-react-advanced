@@ -23,6 +23,8 @@ export async function getImage(id: number) {
   });
 
   if (!image) throw new Error("Image not found");
+  
+  if(image.userId !== user.userId) throw new Error("Unauthorized")
 
   return image;
 }
