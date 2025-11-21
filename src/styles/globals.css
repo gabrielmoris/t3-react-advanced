@@ -9,3 +9,8 @@
 body {
   @apply bg-black text-white;
 }
+
+dialog {
+  max-width: 110vw;
+  max-height: 110vh;
+}
