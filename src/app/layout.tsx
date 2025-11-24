@@ -36,7 +36,7 @@ export default function RootLayout({
          */
         routerConfig={extractRouterConfig(ourFileRouter)}
       />
-      <html lang="en" className={`${geist.variable}`}>
+      <html lang="en" className={`${geist.variable} dark`}>
         <body>
           <div className="grid h-screen grid-rows-[auto_1fr]">
             <TopNav />
