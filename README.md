@@ -13,10 +13,10 @@
 - [x] Use Next/Image Component
 - [x] Error management (with Sentry)
 - [x] Routing/image page (parallel route)
-- [ ] Improve upload button
-- [ ] ShadUIify (toasts)
+- [x] Improve upload button
+- [x] ShadUIify (toasts)
+- [x] Analytics (posthog)
 - [ ] Delete button (with server actions)
-- [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
 
 # Things I learned
@@ -26,12 +26,16 @@
 - React Taint is an experimental security feature in React focused on preventing sensitive data—such as secrets, user objects, or tokens—from being unintentionally exposed to the client side when using Server Components (RSCs). It works by "tainting" data or objects, which means marking them as forbidden to cross the server-to-client boundary
 - `import 'server-only'` marks your module as only usable on the server and prevents it from being used on the client.
 - Parallel routes like @modal creation is a feature from Next.js. Check implementation in `layout.tsx`. https://nextjs.org/docs/app/api-reference/file-conventions/parallel-routes
+- Shadui
+- Posthog
 
 # Services Used
 
 - https://docs.uploadthing.com
 - https://clerk.com
 - https://vercel.com
+- https://sentry.io
+- https://posthog.com
 
 # Create T3 App
 

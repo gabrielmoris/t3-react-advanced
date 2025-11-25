@@ -12,6 +12,9 @@ const coreConfig = {
       {
         hostname: "utfs.io",
       },
+      {
+        hostname: "eu-assets.i.posthog.com",
+      },
     ],
   },
   typescript: {
@@ -19,6 +22,19 @@ const coreConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+
+  async rewrites() {
+    return [
+      {
+        source: "/ingest/static/:path*",
+        destination: "https://eu-assets.i.posthog.com/static/:path*",
+      },
+      {
+        source: "/ingest/:path*",
+        destination: "https://eu.i.posthog.com/:path*",
+      },
+    ];
   },
 };
 
