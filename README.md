@@ -28,6 +28,7 @@
 - Parallel routes like @modal creation is a feature from Next.js. Check implementation in `layout.tsx`. https://nextjs.org/docs/app/api-reference/file-conventions/parallel-routes
 - Shadui
 - Posthog
+- Server Actions
 
 # Services Used
 
