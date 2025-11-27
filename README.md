@@ -16,7 +16,7 @@
 - [x] Improve upload button
 - [x] ShadUIify (toasts)
 - [x] Analytics (posthog)
-- [ ] Delete button (with server actions)
+- [x] Delete button (with server actions)
 - [ ] Ratelimiting (upstash)
 
 # Things I learned
@@ -28,6 +28,7 @@
 - Parallel routes like @modal creation is a feature from Next.js. Check implementation in `layout.tsx`. https://nextjs.org/docs/app/api-reference/file-conventions/parallel-routes
 - Shadui
 - Posthog
+- Server Actions
 
 # Services Used
 
