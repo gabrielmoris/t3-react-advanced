@@ -16,7 +16,7 @@
 - [x] Improve upload button
 - [x] ShadUIify (toasts)
 - [x] Analytics (posthog)
-- [ ] Delete button (with server actions)
+- [x] Delete button (with server actions)
 - [ ] Ratelimiting (upstash)
 
 # Things I learned
