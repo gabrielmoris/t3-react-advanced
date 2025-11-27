@@ -2,7 +2,9 @@ import "server-only"; //  `import 'server-only'` marks your module as only usabl
 import { db } from "./db";
 import { auth } from "@clerk/nextjs/server";
 import { images as allImages } from "./db/schema";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 
 export async function getMyImages() {
   const user = await auth();
@@ -36,13 +38,9 @@ export async function deleteImage(id: number) {
 
   if (!user.userId) throw new Error("Unauthorized");
 
-  const image = await db.query.images.findFirst({
-    where: (images, { eq }) => eq(images.id, id),
-  });
-
-  if (!image) throw new Error("Image not found");
-
-  if (image.userId !== user.userId) throw new Error("Unauthorized");
-
-  await db.delete(allImages).where(eq(allImages.id, id));
+  await db
+    .delete(allImages)
+    .where(and(eq(allImages.id, id), eq(allImages.userId, user.userId)));
+  revalidatePath("/");
+  redirect("/");
 }
