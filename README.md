@@ -28,7 +28,8 @@
 - Parallel routes like @modal creation is a feature from Next.js. Check implementation in `layout.tsx`. https://nextjs.org/docs/app/api-reference/file-conventions/parallel-routes
 - Shadui
 - Posthog
-- Server Actions
+- [Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions), used in `components/full-image-page.tsx` line 36.
+- [Ratelimiting with upstash](https://github.com/upstash/ratelimit-js)
 
 # Services Used
 
@@ -37,6 +38,7 @@
 - https://vercel.com
 - https://sentry.io
 - https://posthog.com
+- https://upstash.com
 
 # Create T3 App
 
