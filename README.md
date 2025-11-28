@@ -19,6 +19,14 @@
 - [x] Delete button (with server actions)
 - [x] Ratelimiting (upstash)
 
+## Challenges
+
+- [ ] Fix the page layout for images of different resolutions
+- [ ] Add tests
+- [ ] "Selecting" multiple images on the gallery page
+- [ ] Infinite Scroll
+- [ ] Folders / albums
+
 # Things I learned
 
 - Use `git add -p` to see the changes and select which ones to add
